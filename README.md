@@ -12,4 +12,4 @@ Notebooks:
 
 03: PSI for modesl in 01 (the models satisfy requirements)
 
-Work description: analysis and results
+Analysis and results: Work description

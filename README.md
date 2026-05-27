@@ -10,6 +10,6 @@ Notebooks:
 
 02: Train: LR model (with dummies)
 
-03: PSI for modesl in 01 (the models satisfy requirements)
+03: PSI for model in 01 (the model satisfies requirements)
 
 Analysis and results: Work description

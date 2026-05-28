@@ -6,7 +6,7 @@ Requirements: Build Application model for loan application approval. The model m
 
 Notebooks:
 
-01: Processing: Data handle (Noise, Outlier, Corr, Feature engineering, WOE, IV..)  + Hyperparemeters tuning (cv, gridsearch..) + Train for Trees, Boosting and Stacking (also: data handle for LR model with dummies)
+01: Processing: Data handle (Noise, Outlier, Corr, Feature engineering, WOE, IV..)  + Hyperparemeters tuning (gridsearch, stratifiedkfold..) + Train for Trees, Boosting and Stacking (also: data handle for LR model with dummies)
 
 02: Train: LR model (with dummies)
 

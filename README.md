@@ -1,13 +1,13 @@
-# [Application Model] 
+# Application Model
 
 ## Information
-Application Scorecard Model - Notes: written by Mehul Melta
+**Application Scorecard Model - Notes**: written by Mehul Melta
 
-Data and requirements: in the files 1. Data. and 2. Instituions code
+**Data and requirements**: in the files 1. Data. and 2. Instituions code
 
-Requirements: Build Application model for loan application approval. The model must have Gini > 0.35 and PSI (Population Stability Index) < 0.02 
+**Requirements**: Build Application model for loan application approval. The model must have Gini > 0.35 and PSI (Population Stability Index) < 0.02 
 
-Notebooks:
+**Notebooks:**
 
 01: Processing: Data handle (Noise, Outlier, Corr, Feature engineering, WOE, IV..)  + Hyperparemeters tuning (gridsearch, stratifiedkfold..) + Train for Trees, Boosting and Stacking (also: data handle for LR model with dummies)
 
@@ -15,14 +15,15 @@ Notebooks:
 
 03: PSI for model in 01 (the model satisfies requirements)
 
-Analysis and results: Work description
+**Analysis and results**: Work description
 
 ##  Overview
 An Application Model that scores loan applicants and classifies them by default risk
 Requirements: Build Application model for loan application approval. The model must have Gini > 0.35 and PSI (Population Stability Index) < 0.02 
 
-## 📂 Dataset 
+## Dataset 
 **Original dataset:** 14,000 samples
+**Train/Test/OOT**: sorted by 'disbursement_date', then divide 8/2 for Train/Test and OOT/PSI calc. In Train test samples, split 8/2 for Train/Test
 **Target variable:** FPD10+
 * `FPD10+` → 1 = default class, 0 = non-default class
   

@@ -36,10 +36,13 @@ Requirements: Build Application model for loan application approval. The model m
 * Perform EDA: handle N/A, duplicate, outliers, correlation analysis, explore distributions, Imbalanced data..
 * Feature Engineering:
   
-+ Trend features (using ALL balance): ['BAL_CHANGE_ALL'] = ['OUTS_BAL_ALL_M1'] - ['OUTS_BAL_ALL_M6']
-+ 'AVG_OUTS_BAL_ALL' = Avg (.._ALL_M1,3,6,12)
-+ Keep only M1,3,6,12 for Loan, CC, All
-+ Income stress = Out bal all m1/mth income
+(1) Trend features (using ALL balance): ['BAL_CHANGE_ALL'] = ['OUTS_BAL_ALL_M1'] - ['OUTS_BAL_ALL_M6']
+
+(2) 'AVG_OUTS_BAL_ALL' = Avg (.._ALL_M1,3,6,12)
+
+(3) Keep only M1,3,6,12 for Loan, CC, All
+
+(4) Income stress = Out bal all m1/mth income
 
 For Credit risk models, a lots of high correlation features (corr > 0.7..) so we try also non linear models (tree, boosting) so that we could keep high-corr features in the models
 
@@ -47,10 +50,14 @@ For Credit risk models, a lots of high correlation features (corr > 0.7..) so we
 * Train models: (1) LogReg (with dummies) and (2) other models: LogReg, Random Forest, ExtraTrees, GradBoost, AdaBoost, CatBoost, XGB, LightGBM, Stacking (base learners: LGBM, CAT, XGM; meta learner: LogReg); handle for imbalanced data (class_weight='balanced'; scale_pos_weight for XGB,...)
 * Evaluate metrics: (1) LogReg (with dummies):  p-values, Gini, KS; (2) other models: F2-score, Recall, PR AUC, Gini, KS (since False Negative is costly)
 * Hyperparameter tuning: Cv gridsearch, stratified k-fold (k=5), scoring (for optimization) = F2 score
-  
+
+## Features selected
+<img width="740" height="719" alt="image" src="https://github.com/user-attachments/assets/d46f1dfa-904c-440a-9147-6ec4569dceb8" />
+
 ## 🚀 Results
 
 (1) LogReg (with dummies): Gini = 0.3055 -> not good
+
 (2) Other models: 
 * Good models: All models are good, except GradBoost, AdaBoost and LogReg. Gini 0.63 - 0.66, KS ~ 0.6, F2 ~ 0.6, Recall ~ 0.6, 
 

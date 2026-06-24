@@ -1,3 +1,25 @@
+# 🏷️ [Your Project Title] 
+Goal
+## 📌 Overview
+
+## 📂 Dataset 
+
+### 🔑 Key Features
+
+## 🎯 Objectives
+
+## 🛠 Methodology & Tools
+
+
+## 📊 Key Insights
+
+
+## 🚀 Results
+
+
+## 🚀 Next Steps / Improvements
+
+## 👤 Author
 Application Scorecard Model - Notes: written by Mehul Melta
 
 Data and requirements: in the files 1. Data. and 2. Instituions code

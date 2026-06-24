@@ -59,12 +59,16 @@ For Credit risk models, a lots of high correlation features (corr > 0.7..) so we
 (1) LogReg (with dummies): Gini = 0.3055 -> not good
 
 (2) Other models: 
-* Good models: All models are good, except GradBoost, AdaBoost and LogReg. Gini 0.63 - 0.66, KS ~ 0.6, F2 ~ 0.6, Recall ~ 0.6, 
+* Good models: All models are good, except GradBoost, AdaBoost and LogReg. Gini 0.63 - 0.66, KS ~ 0.6, F2 ~ 0.6, Recall ~ 0.6.
+  <img width="687" height="593" alt="image" src="https://github.com/user-attachments/assets/940c4dcc-9a87-404c-b358-b8b3bd8ac27d" />
+
 
   I choose XGB as the representative model for PSI calc (model/feature drift checking).
   
 * PSI on model score: 0.0202 -> stable 
 * PSI for individual (numeric) features: most features have small PSI (<0.03); features with high PSI: mth_since _issue_date (3.75), Income stress (0.4), Bal change all (0.3)...
+<img width="420" height="322" alt="image" src="https://github.com/user-attachments/assets/86431bbb-be40-40e1-9e12-a7d086933ece" />
+
 
 ## 🚀 Next Steps / Improvements
 Possible try:

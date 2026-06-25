@@ -47,11 +47,11 @@ Requirements: Build Application model for loan application approval. The model m
 For Credit risk models, a lots of high correlation features (corr > 0.7..) so we try also non linear models (tree, boosting) so that we could keep high-corr features in the models
 
 * Feature Selection metrics/tools: (1) LogReg (with dummies): WOE, IV for LogReg and (2) other models: SHAP, LightGBM 
-* Train models: (1) LogReg (with dummies) and (2) other models: LogReg, Random Forest, ExtraTrees, GradBoost, AdaBoost, CatBoost, XGB, LightGBM, Stacking (base learners: LGBM, CAT, XGM; meta learner: LogReg); handle for imbalanced data (class_weight='balanced'; scale_pos_weight for XGB,...)
+* Train models: (1) LogReg (with dummies) and (2) other models: LogReg, Random Forest, ExtraTrees, GradBoost, AdaBoost, CatBoost, XGB, LightGBM, Stacking (base learners: LGBM, CAT, XGM; meta learner: LogReg); handle for imbalanced data (class_weight='balanced'; scale_pos_weight for XGB,...). For (1): create scorecard and divide customers into 5 risk bands (from very low risk to very high risk)
 * Evaluate metrics: (1) LogReg (with dummies):  p-values, Gini, KS; (2) other models: F2-score, Recall, PR AUC, Gini, KS (since False Negative is costly)
 * Hyperparameter tuning: Cv gridsearch, stratified k-fold (k=5), scoring (for optimization) = F2 score
 
-## Features selected
+## Features selected for models (without dummies)
 <img width="740" height="719" alt="image" src="https://github.com/user-attachments/assets/d46f1dfa-904c-440a-9147-6ec4569dceb8" />
 
 ## 🚀 Results
@@ -72,7 +72,9 @@ For Credit risk models, a lots of high correlation features (corr > 0.7..) so we
 
 ## 🚀 Next Steps / Improvements
 Possible try:
+* Feature engineering: build other relevant features (for credit risk); add CIC info
 * SMOTENC (if categorical features are encoded numerically) inside CV pipline
+* Optuna for hyperparameter tuning
 
 
 

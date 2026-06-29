@@ -11,7 +11,7 @@
 
 * 02: Train: LR model (with dummies)
 
-* 03: PSI for model in 01 (the model satisfies requirements)
+* 03: PSI for model in 01 (the model satisfy requirements)
 
 **Analysis and results**: Work description
 

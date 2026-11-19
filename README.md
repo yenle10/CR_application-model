@@ -72,7 +72,7 @@ For Credit risk models, a lots of high correlation features (corr > 0.7..) so we
 
 ## 🚀 Next Steps / Improvements
 Possible try:
-* Feature engineering: build other relevant features (for credit risk); add CIC info
+* Feature engineering: build other relevant features (for credit risk) and try to see the model performance
 * SMOTENC (if categorical features are encoded numerically) inside CV pipline
 * Optuna for hyperparameter tuning
 
